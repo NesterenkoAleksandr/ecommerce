@@ -19,3 +19,7 @@ a:hover{
 h1{
 	color: $white;
 }
+
+p:last-of-type{
+	margin-bottom: 0;
+}

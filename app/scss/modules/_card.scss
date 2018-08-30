@@ -8,6 +8,19 @@
 		box-shadow: $box-shadow-lg;
 	};
 
+	.card-img-top-wrapper{
+		max-height: 250px;
+		overflow: hidden;
+
+		img {
+			border-radius: 0;
+		}
+
+		&.sm-img{
+			max-height: 180px;
+		}
+	}
+
 	// The tape in the upper left corner of the card
 	.trending{
 		cursor: pointer;
@@ -32,8 +45,14 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: $card-spacer-x-sm;
+
+		padding: 1.8rem $card-spacer-x-sm $card-spacer-x-sm $card-spacer-x-sm;
 		text-align: left;
+
+		@media(min-width: 768px){
+			padding: 1.8rem;
+			padding-bottom: $card-spacer-x-sm;
+		}
 
 		.card-title{
 			color: inherit;
@@ -49,7 +68,7 @@
 		}
 
 		.card-price{
-			font-size: 1.875rem;
+			// font-size: 1.875rem;
 			font-weight: $font-weight-bold;
 		}
 
@@ -65,7 +84,12 @@
 		align-items: center;
 		justify-content: space-between;
 		background-color: transparent;
-		padding: $spacer $card-spacer-x;
+		padding: $spacer $card-spacer-x-sm $card-spacer-x-sm $card-spacer-x-sm;
+
+		@media(min-width: 768px){
+			padding: $spacer $card-spacer-x;
+		}
+
 
 		.card-author{
 			display: flex;
@@ -100,7 +124,7 @@
 		transition: $transition-base;
 		cursor: pointer;
 		font-weight: $font-weight-bold;	
-		margin-right: 4px;
+		margin-right: 2px;
 
 		&:last-child{
 			margin-right: 0;

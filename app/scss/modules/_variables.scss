@@ -3,6 +3,8 @@ $primary: #8bc34a;
 $secondary: #e74c3c;
 $gray-100: #cccccc;
 $gray-200: #e8e8e8;
+$gray-300: #f5f5f5;
+$gray-500: #e0e0e0;
 $gray-600: #70838d;
 $gray-700: #aeb4bb;
 $gray-800: #b5b5b5;
@@ -22,13 +24,19 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$mango-tango: #ef6c00 !default;
+$dark-tangerine: #fcb322 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 $lavender-blush: #f4f6f5 !default;
 $heather: #b0bec5 !default;
+$nero: #222222;
+
+$info: $mango-tango;
+$warning: $dark-tangerine;
+$light: $gray-300;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -40,6 +48,7 @@ $colors: map-merge(
 	"pink":       $pink,
 	"red":        $red,
 	"orange":     $orange,
+	"mango-tango": $mango-tango,
 	"yellow":     $yellow,
 	"green":      $green,
 	"teal":       $teal,
@@ -91,8 +100,11 @@ $spacers: map-merge(
 	4: ($spacer * 1.5),
 	5: ($spacer * 3),
 	10: 10px,
+	12: 12px,
 	13: 13px,
+	14: 14px,
 	20: 20px,
+	24: 24px,
 	25: 25px,
 	28: 28px,
 	30: 30px,
@@ -126,8 +138,6 @@ $link-hover-color: $cyan;
 $link-hover-decoration: none;
 
 // Components
-// $box-shadow-sm: 0 0.0625rem 0.125rem 0 rgba(205, 214, 222, 0.75);
 $box-shadow-sm: 0 0.0625rem 0.125rem 0 rgba(205, 214, 222, 0.75);
 $box-shadow: 0 0.0625rem 0.1875rem 0 rgba(204, 216, 228, 0.75);
-// $box-shadow-lg: 0.0625rem 0.125rem 0.3125rem 0 rgba(202, 215, 228, 0.75);
 $box-shadow-lg: 0 1rem 1.25rem 0 rgba(216, 216, 216, 0.75);
