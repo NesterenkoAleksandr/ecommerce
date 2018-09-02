@@ -13,7 +13,8 @@ $green: #8bc34a;
 $red: #e74c3c;
 $orange: #ffa726;
 $cyan: #546e7a;
-
+$cyan-100: #b7c3c8;
+$pattens-blue: #dde3e8;
 $dark: #263238;
 
 $white:   #fff !default;
@@ -33,10 +34,21 @@ $cyan:    #17a2b8 !default;
 $lavender-blush: #f4f6f5 !default;
 $heather: #b0bec5 !default;
 $nero: #222222;
-
+$alice-blue: #f2f5f8;
+$san-juan: #455a64;
+$dark-green: #76ae36;
+$atomic: #424d53;
 $info: $mango-tango;
 $warning: $dark-tangerine;
 $light: $gray-300;
+$blue-bayoux: #697378;
+$big-stone: #2f3c43;
+$mariner: #3b5998;
+$blue-jeans: #55acee;
+$cinnabar: #e52d27;
+$venetian-red: #bd081c;
+$denim: #1565c0;
+$bali-hai: #919699;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -58,10 +70,14 @@ $colors: map-merge(
 	"heather":    $heather,
 	"gray":       $gray-600,
 	"gray-83":    $gray-83,
-	"gray-dark":  $gray-800
+	"gray-dark":  $gray-800,
+	"san-juan": $san-juan
   ),
   $colors
 );
+
+// Body
+// $body-bg: $lavender-blush;
 
 // Fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
@@ -103,12 +119,15 @@ $spacers: map-merge(
 	12: 12px,
 	13: 13px,
 	14: 14px,
+	15: 15px,
+	18: 18px,
 	20: 20px,
 	24: 24px,
 	25: 25px,
 	28: 28px,
 	30: 30px,
 	35: 35px,
+	36: 36px,
 	40: 40px,
 	45: 45px,
 	50: 50px,
@@ -117,16 +136,22 @@ $spacers: map-merge(
 	65: 65px,
 	75: 75px,
 	83: 83px,
+	90: 90px,
+	97: 97px,
 	100: 100px,
 	105: 105px,
 	110: 110px,
 	115: 115px,
 	120: 120px,
+	145: 145px,
 	150: 150px,
 	170: 170px
   ),
   $spacers
 );
+
+// Borders
+$border-color: $pattens-blue;
 
 // Cards
 $card-spacer-y: 0.35rem;
@@ -141,3 +166,6 @@ $link-hover-decoration: none;
 $box-shadow-sm: 0 0.0625rem 0.125rem 0 rgba(205, 214, 222, 0.75);
 $box-shadow: 0 0.0625rem 0.1875rem 0 rgba(204, 216, 228, 0.75);
 $box-shadow-lg: 0 1rem 1.25rem 0 rgba(216, 216, 216, 0.75);
+
+// Buttons
+$btn-border-radius-lg: 0;

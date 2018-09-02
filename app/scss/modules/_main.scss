@@ -1,4 +1,4 @@
-/**{outline: 1px dotted green;}*/
+// *{outline: 1px dotted red;}
 .bg-lavender{
 	background-color: $lavender-blush;
 }
@@ -7,13 +7,16 @@
 	background-color: $dark;
 }
 
-/*Styles for header banner*/
-.main-banner{
+.bg-img-1{
 	background-image: url(../img/header-banner.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
 
+/*Styles for header banner*/
+.main-banner-wrapper{
+	
 	h4 {
 		font-weight: 500;
 	}

@@ -1,0 +1,50 @@
+.sidebar-block{
+	background: $white;
+	border: 1px solid $pattens-blue;
+	padding: 1.5625rem;
+
+	& + .sidebar-block{
+		margin-top: 30px;
+	}
+
+	h4{
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $pattens-blue;
+	}
+
+	.card{
+		border: none;
+		box-shadow: none;
+
+		& + .card{
+			margin-top: 30px;
+			border-top: 1px solid $pattens-blue;
+			padding-top: 30px;
+		}
+
+		&-body,
+		&-footer{
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		&-footer{
+			border-top: none;			
+
+			.card-author-img{
+				margin-right: 6px;
+			}			
+		}
+
+		&-title{
+			font-size: 1rem;
+		}
+
+		&-price,
+		&-title{
+			font-weight: $font-weight-bold;
+			color: $dark;
+		}
+	}
+}

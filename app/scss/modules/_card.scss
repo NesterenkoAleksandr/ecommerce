@@ -15,10 +15,6 @@
 		img {
 			border-radius: 0;
 		}
-
-		&.sm-img{
-			max-height: 180px;
-		}
 	}
 
 	// The tape in the upper left corner of the card
@@ -28,7 +24,7 @@
 		position: absolute;
 		width: 0;
 		height: 0;
-		border-top: 60px solid #8bc34a;
+		border-top: 60px solid $primary;
 		border-right: 60px solid transparent;
 		z-index: 3;
 
@@ -68,7 +64,6 @@
 		}
 
 		.card-price{
-			// font-size: 1.875rem;
 			font-weight: $font-weight-bold;
 		}
 

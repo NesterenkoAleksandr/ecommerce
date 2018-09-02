@@ -1,0 +1,91 @@
+.form-login{
+	
+	.modal-dialog {
+		max-width: 500px;
+		margin: 1.75rem auto;
+
+		@media (min-width: 576px){
+			max-width: 730px;
+		}
+	}
+	// Modal header
+	// Top section of the modal w/ title and dismiss
+	.modal-header{
+		border-bottom: none;
+
+		.close{
+			font-size: 18px;
+			color: $white;
+		}
+	}
+
+	.modal-body{
+
+		.btn-login,
+		.btn-register {
+			font-size: 14px;
+			font-weight: $font-weight-bold;
+			background: $dark-green;
+			color: $white;
+			display: inline-block;
+			padding: 13px 50px;
+			transition: $transition-base;			
+			border: none;
+			border-radius: 0;
+
+			&:hover{
+				background-color: $white;
+				color: $black;
+				box-shadow: 0px 3px 2px 0px rgba(118, 174, 54, 0.75);
+			}		
+		}
+
+		.btn-login{
+			text-transform: uppercase;
+			margin-right: 10px;
+		}
+
+		.btn-register{
+			font-size: 18px;
+			font-weight: $font-weight-normal;
+		}
+
+		.lost-password{
+			color: $white;
+			font-size: 18px;
+			transition: $transition-base;
+			&:hover{
+				color: $dark;
+			}
+		}
+
+		.form-control-wrapper{
+			display: flex;
+			align-items: baseline;
+			background-color: $dark-green;
+			color: $white;
+
+			i{
+				font-size: 14px;
+				margin-left: 18px;
+			}
+		}
+
+		.form-control{
+			background-color: $dark-green;
+			color: $white;
+			border: none;
+			font-size: 14px;
+			padding-top: 22px;
+			padding-bottom: 20px;			
+		}
+
+		input::placeholder{
+			color: $white;
+		}
+
+		.remember-lost{
+			width: 100%;
+		}
+	}
+}
