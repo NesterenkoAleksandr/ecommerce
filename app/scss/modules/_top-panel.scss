@@ -215,6 +215,7 @@
 		}
 		.dropdown-item{
 			color: $cyan;
+			font-size: $font-size-sm;
 
 			&:hover{
 				color: $primary;
@@ -223,6 +224,8 @@
 
 		.dropdown-menu{
 			padding: 0;
+			padding-top: 16px;
+			padding-bottom: 16px;
 			@media(min-width: 1200px){
 				margin-top: 31px;
 			}
