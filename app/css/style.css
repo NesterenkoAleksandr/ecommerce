@@ -1482,7 +1482,7 @@ pre {
   border-color: #838383; }
 
 .table .thead-light th {
-  color: #495057;
+  color: #e0e0e0;
   background-color: #e9ecef;
   border-color: #dee2e6; }
 
@@ -1556,7 +1556,7 @@ pre {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
+  color: #e0e0e0;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1573,7 +1573,7 @@ pre {
     background-color: transparent;
     border: 0; }
   .form-control:focus {
-    color: #495057;
+    color: #e0e0e0;
     background-color: #fff;
     border-color: #c8e3aa;
     outline: 0;
@@ -1596,7 +1596,7 @@ pre {
     opacity: 1; }
 
 select.form-control:focus::-ms-value {
-  color: #495057;
+  color: #e0e0e0;
   background-color: #fff; }
 
 .form-control-file,
@@ -2841,7 +2841,7 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #e0e0e0;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -2989,7 +2989,7 @@ input[type="button"].btn-block {
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #495057;
+  color: #e0e0e0;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23b5b5b5' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
@@ -3004,7 +3004,7 @@ input[type="button"].btn-block {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(200, 227, 170, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(200, 227, 170, 0.5); }
     .custom-select:focus::-ms-value {
-      color: #495057;
+      color: #e0e0e0;
       background-color: #fff; }
   .custom-select[multiple], .custom-select[size]:not([size="1"]) {
     height: auto;
@@ -3062,7 +3062,7 @@ input[type="button"].btn-block {
   height: calc(2.25rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #495057;
+  color: #e0e0e0;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
@@ -3076,7 +3076,7 @@ input[type="button"].btn-block {
     height: 2.25rem;
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
-    color: #495057;
+    color: #e0e0e0;
     content: "Browse";
     background-color: #e9ecef;
     border-left: 1px solid #ced4da;
@@ -3237,7 +3237,7 @@ input[type="button"].btn-block {
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
+    color: #e0e0e0;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
@@ -4217,10 +4217,10 @@ input[type="button"].btn-block {
 
 .list-group-item-action {
   width: 100%;
-  color: #495057;
+  color: #e0e0e0;
   text-align: inherit; }
   .list-group-item-action:hover, .list-group-item-action:focus {
-    color: #495057;
+    color: #e0e0e0;
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
@@ -9804,6 +9804,73 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-success {
   color: #fff; }
 
+.account-information .info-inner {
+  margin-left: 1rem;
+  margin-top: 1rem; }
+
+.account-information .shop-block .btn-shop {
+  border-radius: 50%;
+  font-size: 14px;
+  position: relative;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  line-height: 35px;
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+.account-information .shop-block .badge {
+  position: absolute;
+  border-radius: 50%; }
+
+.account-information .shop-block .dropdown-menu {
+  border: 1px solid #e0e0e0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0; }
+  .account-information .shop-block .dropdown-menu .dropdown-item + .dropdown-item {
+    border-top: 1px solid #e0e0e0; }
+
+.account-information .shop-block .dropdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px 15px; }
+  .account-information .shop-block .dropdown-item .bought-item {
+    margin-left: 23px;
+    margin-right: 73px; }
+    .account-information .shop-block .dropdown-item .bought-item .bought-item-name {
+      font-size: 0.9375rem; }
+    .account-information .shop-block .dropdown-item .bought-item .bought-item-frame {
+      font-size: 0.75rem; }
+    .account-information .shop-block .dropdown-item .bought-item .bought-item-price {
+      color: #000; }
+  .account-information .shop-block .dropdown-item .img-wrapper {
+    width: 72px;
+    height: 56px;
+    overflow: hidden; }
+
+.account-information .shop-block .total-price {
+  padding: 20px 15px;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden; }
+  .account-information .shop-block .total-price .row + .row {
+    margin-top: 20px; }
+
+.account-information .btn-login,
+.account-information .btn-reg {
+  margin-bottom: 0.2rem; }
+
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child,
 .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child {
   margin-bottom: 0; }
@@ -9821,12 +9888,15 @@ a:hover {
 
 .card {
   border-radius: 0;
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
   .card:hover {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     -webkit-box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
     box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75); }
+  .card .card-image-top {
+    width: 100%;
+    height: 250px; }
   .card .card-bestseller {
     position: absolute;
     text-align: center;
@@ -9882,7 +9952,13 @@ a:hover {
     .card-author-name:hover {
       color: #8bc34a; }
   .card-rating {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .card-rating-icon {
     margin-right: 2px;
     color: #ffa726;

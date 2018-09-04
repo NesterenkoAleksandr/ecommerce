@@ -1,0 +1,72 @@
+.account-information{
+  .info-inner{
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .shop-block{
+    .btn-shop{
+      border-radius: 50%;
+      font-size: 14px;
+      position: relative;
+      padding: 0;
+      width: 34px;
+      height: 34px;
+      line-height: 35px;
+      text-align: center;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    .badge{
+      position: absolute;
+      border-radius: 50%;
+    }
+    .dropdown-menu{
+      border: 1px solid $gray-700;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+      .dropdown-item+.dropdown-item{
+        border-top: 1px solid $gray-700;
+      }
+    }
+    .dropdown-item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 15px;
+      .bought-item{
+        margin-left: 23px;
+        margin-right: 73px;
+        .bought-item-name{
+          font-size: 0.9375rem;
+        }
+        .bought-item-frame{
+          font-size: 0.75rem; 
+        }
+        .bought-item-price{
+          color: $black;
+        }
+      }
+      .img-wrapper{
+        width: 72px;
+        height: 56px;
+        overflow:hidden;
+      }
+    }
+    .total-price{
+      padding: 20px 15px;
+      margin-left: 23px;
+      margin-right: 23px;
+      margin-top: 20px;
+      border-top: 1px solid $gray-700;
+      overflow: hidden;
+      .row+.row{
+        margin-top: 20px;
+      }
+    }
+  }
+  .btn-login,
+  .btn-reg{
+    margin-bottom: 0.2rem;
+  }
+}
