@@ -1,0 +1,28 @@
+.btn-group.btn-group.btn-group-offset-lg{
+	flex-wrap: wrap;
+	margin-left: -0.5rem;
+	margin-bottom: -0.5rem;
+	> * {
+		margint-left: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.btn-group.btn-group.btn-group-offset-xs{
+	flex-wrap: wrap;
+	margin-left: -3px;
+	margin-bottom: -3px;
+	> * {
+		margint-left: 3px;
+		margin-bottom: 3px;
+	}
+}
+
+.group-offset-left-xs{
+	margin-left: -0.5rem;
+	margin-bottom: -0.5rem;
+	> * {
+		margint-left: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+}

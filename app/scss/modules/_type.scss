@@ -31,6 +31,13 @@ a.botticelli-primary{
 	}
 }
 
+.link-dark{
+	color: $dark;
+	&:hover{
+		color: $primary;
+	}
+}
+
 
 // Texts
 p:last-of-type{
@@ -38,12 +45,17 @@ p:last-of-type{
 }
 
 // Lists
+.inline-list{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
 .listing{
 	list-style: none;
 	padding-left: 0;
 	margin-bottom: 0;
 	li{
-		font-size: 0.9375rem;
 		& + li{
 			margin-top: 15px;;
 		}

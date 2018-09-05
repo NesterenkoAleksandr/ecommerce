@@ -17,6 +17,7 @@ $cyan-100: #b7c3c8;
 $pattens-blue: #dde3e8;
 $dark: #263238;
 
+
 $white:   #fff !default;
 $gray-83: #d4d4d4 !default;
 $botticelli: #90a4ae !default;
@@ -31,6 +32,7 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$light-cyan: #a6b5bb;
 $lavender-blush: #f4f6f5 !default;
 $heather: #b0bec5 !default;
 $nero: #222222;
@@ -41,6 +43,7 @@ $atomic: #424d53;
 $info: $mango-tango;
 $warning: $dark-tangerine;
 $light: $gray-300;
+$light-gray: #d7d7d7;
 $blue-bayoux: #697378;
 $big-stone: #2f3c43;
 $mariner: #3b5998;
@@ -49,6 +52,10 @@ $cinnabar: #e52d27;
 $venetian-red: #bd081c;
 $denim: #1565c0;
 $bali-hai: #919699;
+$arapawa: #7a8b95;
+$light-orange: #ffb64c;
+$light-green: #65ba69;
+$bermuda-grey: #78909c;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -71,9 +78,66 @@ $colors: map-merge(
 	"gray":       $gray-600,
 	"gray-83":    $gray-83,
 	"gray-dark":  $gray-800,
-	"san-juan": $san-juan
+	"san-juan": $san-juan,
+	"light-cyan": $light-cyan
   ),
   $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+$facebook:      $mariner;
+$twitter:       $blue-jeans;
+$pinterest:     $venetian-red;
+$linkedin:      $denim;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "lavender":   $lavender-blush,
+    "facebook":   $mariner,
+    "twitter":    $blue-jeans,
+    "pinterest":  $venetian-red,
+    "linkedin":   $denim,
+    "cyan":       $cyan,
+    "light-cyan": $light-cyan,
+    "light-orange": $light-orange,
+    "light-green": $light-green,
+    "cyan-100": #ced7db
+  ),
+  $theme-colors
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    80: 80px,
+    120: 120px,
+    420: 420px,
+    auto: auto
+  ),
+  $sizes
 );
 
 // Body
@@ -115,25 +179,40 @@ $spacers: map-merge(
 	3: $spacer,
 	4: ($spacer * 1.5),
 	5: ($spacer * 3),
+	6: 6px,
 	10: 10px,
+	11: 11px,
 	12: 12px,
 	13: 13px,
 	14: 14px,
 	15: 15px,
 	18: 18px,
 	20: 20px,
+	22: 22px,
+	23: 23px,
 	24: 24px,
 	25: 25px,
+	27: 27px,
 	28: 28px,
 	30: 30px,
+	32: 32px,
 	35: 35px,
 	36: 36px,
+	38: 38px,
 	40: 40px,
+	43: 43px,
+	44: 44px,
 	45: 45px,
+	48: 48px,
 	50: 50px,
+	52: 52px,
+	53: 53px,
 	55: 55px,
+	58: 58px,
 	60: 60px,
 	65: 65px,
+	69: 69px,
+	70: 70px,
 	75: 75px,
 	83: 83px,
 	90: 90px,
