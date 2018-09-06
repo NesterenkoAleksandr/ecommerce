@@ -9804,9 +9804,38 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-success {
   color: #fff; }
 
-.account-information .info-inner {
-  margin-left: 1rem;
+.navbar {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem; }
+
+.navbar-expand-md {
+  padding-left: 0;
+  padding-right: 0; }
+  .navbar-expand-md .navbar-nav {
+    font-size: 0.875rem;
+    font-weight: 500; }
+    @media (min-width: 768px) {
+      .navbar-expand-md .navbar-nav {
+        margin-left: -1rem;
+        margin-right: -1rem; } }
+    @media (min-width: 768px) {
+      .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem; } }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #8bc34a; }
+
+.top-panel {
   margin-top: 1rem; }
+
+.account-information .info-inner {
+  margin-left: 1rem; }
+
+.account-information .text-info {
+  margin-top: 0.9rem; }
 
 .account-information .shop-block .btn-shop {
   border-radius: 50%;
