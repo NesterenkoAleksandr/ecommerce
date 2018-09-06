@@ -21,14 +21,23 @@
 }
 
 .btn-price-select{
-	color: $gray-600;
+	color: $primary;
 	background-color: transparent;
 	border-radius: 0;
 	border-color: $light-gray;
 	padding: 2px 7px;
 
-	.dropdown-toggle{
+	span{
+		color: $gray-600;
+	}
+
+	&:hover{
 		color: $primary;
+		border-color: $primary;
+
+		span{
+			color: $primary;
+		}
 	}
 }
 

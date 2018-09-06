@@ -1,6 +1,3 @@
-// $gray5: darken($white, 5%);
-// $gray25: darken($white, 25%);
-
 .range {
 	background-color: $white;
 	.ui-slider-handle {
@@ -22,6 +19,11 @@
 	}
 
 	.controls {
+		// #slider-range{
+		// 	border: none;
+		// 	background: $alice-blue;
+		// 	border-radius: 0;
+		// }
 		#price-range {
 			border: none;
 			background: $alice-blue;
@@ -36,19 +38,6 @@
 			color: $bermuda-grey;
 			display: inline-block;
 			margin-top: 12px;
-		}
-	}
-
-	.textinputs {
-		@extend .clearfix;
-		padding: 1.5rem 0;
-		input {
-			width: 4rem;
-			display: block;
-			float: left;
-		}
-		input:last-child {
-			float: right;
 		}
 	}
 }

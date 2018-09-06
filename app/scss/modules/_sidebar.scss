@@ -70,11 +70,39 @@
 
 	.shield {
 		position: relative;
-		width: 33px;
-		height: 35px;
-		border-radius: 0 0 70% 70%;
-		display: inline-block;
+		width: 31px;
+		height: 30px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		border-radius: 0 0 2px 2px;
+		i{
+			font-size: 20px;
+			color: $white;
+			z-index: 100;
+		}
+
+		&:before, &:after {
+		    content:"";
+		    border-radius: 0;
+		    border-top-right-radius: 100% 100%;
+		    border-bottom-right-radius: 125% 100%;
+		    width: 18.825px;
+		    height: 20px;
+		    transform-origin: bottom left;
+		    transform: scale(1,1) translateX(10px) rotate(-20deg);
+		    position:absolute;
+		    bottom:-40.5%;
+		    z-index: 1;
+		}
+
+		&:after {transform: scale(-1,1) translateX(-9px) rotate(-20deg);}
 	}
+	.bg-light-orange, .bg-light-orange:before, .bg-light-orange:after {background: $light-orange;}
+	.bg-secondary, .bg-secondary:before, .bg-secondary:after {background: $secondary;}
+	.bg-twitter, .bg-twitter:before, .bg-twitter:after {background: $twitter;}
+	.bg-light-green, .bg-light-green:before, .bg-light-green:after {background: $light-green;}
+	.bg-cyan-200, .bg-cyan-200:before, .bg-cyan-200:after {background: $cyan-200;}
 }
 
 .sidebar-block-author{
@@ -107,8 +135,8 @@
 			font-size: 13px;
 
 			&:hover{
-				color: $dark;
-				border-color: $dark;
+				color: $primary;
+				border-color: $primary;
 			}
 		}
 	}
