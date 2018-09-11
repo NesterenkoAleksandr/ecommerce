@@ -219,3 +219,89 @@
 	}
 }
 
+// Styles for page 404
+.card-error{
+	background-color: $primary;
+	text-align: center;
+	border-top: 1px solid $gray-83;
+	padding-bottom: 100px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+
+	&-title{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.img-man-wrapper{
+			position: relative;
+			&:before{
+				position: absolute;
+				content: "";
+				display: block;
+				width: 100%;
+				height: 20px;
+				background-color: $sushi;
+				border-radius: 50%;
+				bottom: 3%;
+			}
+
+			.img-man{
+				transform: translateY(-20px);
+			}
+		}
+	}
+
+	.txt-not-found{
+		font-size: 30px;
+		font-weight: 400;
+		letter-spacing: 6px;
+		color: $white;
+	}
+
+	.txt-not-available{
+		font-family: "Raleway", sans-serif;
+		font-size: 18px;
+		color: $white;
+		font-weight: 500;
+	}
+
+	a{
+		font-family: "Raleway", sans-serif;
+		font-size: 14px;
+		letter-spacing: 1px;
+		font-weight: 700;
+	}
+}
+
+.card-contact{
+	padding-bottom: 29px;
+
+	i{
+		color: $primary;
+		margin-right: 24px;
+		font-size: 24px;
+	}
+
+	.card-contact-title{
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-bottom: 42px;
+		&:before{
+			position: absolute;
+			left: 40px;
+			bottom: -20px;
+			content: "";
+			height: 3px;
+			width: 45px;
+			background: $primary;
+		}
+	}
+
+	a,
+	p{
+		padding-left: 40px;
+	}
+}
+

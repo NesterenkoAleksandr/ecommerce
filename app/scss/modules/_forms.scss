@@ -19,18 +19,15 @@
 	}
 
 	.controls {
-		// #slider-range{
-		// 	border: none;
-		// 	background: $alice-blue;
-		// 	border-radius: 0;
-		// }
+
 		#price-range {
 			border: none;
 			background: $alice-blue;
-			border-radius: 0;
-			.ui-slider-range {
-				background: $dark;
-			}
+			border-radius: 0;			
+		}
+
+		.ui-slider-range {
+			background: $dark;
 		}
 
 		span{
@@ -39,5 +36,53 @@
 			display: inline-block;
 			margin-top: 12px;
 		}
+	}
+}
+
+.form-upload-item{
+	padding-top: 40px;
+	padding-bottom: 65px;
+	padding-left: 45px;
+	padding-right: 30px;
+
+	.field-desc{
+		font-size: 15px;
+		color: #444444;
+	}
+
+	.field-item{
+		width: 100%;
+	}
+}
+
+.form-contact{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 1rem;
+	width: 100%;
+
+	input,
+	textarea{
+		box-shadow: none;
+		border: none;
+		border-radius: 0;
+		background-color: $alice-blue;
+		color: $gray-48;
+		font-size: 15px;
+		&:focus{
+			background-color: $alice-blue;
+		}
+	}
+
+	textarea{
+		resize:none;
+	}
+
+	button{
+		text-transform: uppercase;
+		border-radius: 0;
+		font-weight: bold;
+		line-height: 24px;
+		padding: 14px 35px;
 	}
 }

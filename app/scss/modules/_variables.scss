@@ -9,6 +9,8 @@ $gray-600: #70838d;
 $gray-700: #aeb4bb;
 $gray-800: #b5b5b5;
 $gray-900: #707070;
+$gray-20: #333333;
+$gray-48: #7a7a7a;
 $green: #8bc34a;
 $red: #e74c3c;
 $orange: #ffa726;
@@ -17,6 +19,9 @@ $cyan-100: #b7c3c8;
 $cyan-200: #ced7db;
 $pattens-blue: #dde3e8;
 $dark: #263238;
+$sushi: #7caf40;
+$charcoal: #444444;
+$gainsboro: #dcdcdc;
 
 
 $white:   #fff !default;
@@ -57,6 +62,8 @@ $arapawa: #7a8b95;
 $light-orange: #ffb64c;
 $light-green: #65ba69;
 $bermuda-grey: #78909c;
+$white-smoke: #f8f8f8;
+$alice-blue: #f1f4f5;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -121,7 +128,11 @@ $theme-colors: map-merge(
     "light-orange": $light-orange,
     "light-green": $light-green,
     "cyan-200": $cyan-200,
-    "gray-600": $gray-600
+    "gray-600": $gray-600,
+    "gray-83": $gray-83,
+    "white-smoke": $white-smoke,
+    "san-juan": $san-juan,
+    "charcoal": $charcoal
   ),
   $theme-colors
 );
@@ -133,10 +144,13 @@ $sizes: map-merge(
   (
     25: 25%,
     50: 50%,
+    60: 60%,
     75: 75%,
     100: 100%,
     80: 80px,
+    110: 110px,
     120: 120px,
+    135: 135px,
     420: 420px,
     auto: auto
   ),
@@ -190,6 +204,7 @@ $spacers: map-merge(
 	14: 14px,
 	15: 15px,
 	18: 18px,
+	19: 19px,
 	20: 20px,
 	22: 22px,
 	23: 23px,
@@ -218,6 +233,7 @@ $spacers: map-merge(
 	70: 70px,
 	75: 75px,
 	83: 83px,
+	85: 85px,
 	90: 90px,
 	97: 97px,
 	100: 100px,
@@ -225,9 +241,15 @@ $spacers: map-merge(
 	110: 110px,
 	115: 115px,
 	120: 120px,
+	125: 125px,
+	130: 130px,
+	135: 135px,
+	140: 140px,
 	145: 145px,
 	150: 150px,
-	170: 170px
+	170: 170px,
+	226: 226px,
+	300: 300px
   ),
   $spacers
 );
@@ -251,3 +273,14 @@ $box-shadow-lg: 0 1rem 1.25rem 0 rgba(216, 216, 216, 0.75);
 
 // Buttons
 $btn-border-radius-lg: 0;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xl: 1200px
+) !default;
+
+/*Tables*/
+$table-dark-bg: $san-juan;

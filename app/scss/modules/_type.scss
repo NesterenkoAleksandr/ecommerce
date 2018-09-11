@@ -87,3 +87,16 @@ span{
 		}
 	}
 }
+
+/*Borders*/
+.border-gray{
+	border: 1px solid $gray-83;	
+}
+
+.border-top-gray{
+	border-top: 1px solid $gray-83;
+}
+
+.border-bottom-none{
+	border-bottom: 0;
+}
