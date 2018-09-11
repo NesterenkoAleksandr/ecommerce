@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis%7COpen+Sans:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<meta name="format-detection" content="telephone=no">
+	<meta name= viewport content="width=device-width height=device-height user-scalable=yes">
+	<title>Product details</title>
+</head>
+<body>
+	<div class="page">
+		<header>
+			<div class="header-inner">
+				<div class="top-panel">
+					<div class="container">
+						<div class="row align-items-center flex-column flex-md-row mb-2 mb-xl-0">
+							<div class="col-xl-2 d-flex justify-content-center justify-content-sm-start">
+								<a class="navbar-brand" href="#">
+									<img src="img/logo.png" alt="logo">
+								</a>
+							</div>
+							<div class="col-xl-10">
+								<div class="account-information d-flex flex-wrap justify-content-center justify-content-xl-end align-items-center">
+									<div class="info-inner pb-2 pb-sm-0">
+										<p class="d-flex flex-wrap justify-content-center justify-content-sm-start info-notify"><span class="text-danger">Need help?</span>&nbsp;<span>Talk to an expert: <a class="info-phone" href="callto:+61383766284">+61 3 8376 6284</a></span></p>
+									</div>
+									<div class="info-inner messages-block">
+										<div class="dropdown">
+											<button class="btn btn-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="fa fa-bell-o"></span>
+												<span class="badge badge-warning">8</span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-title text-primary">Need WP Help!</div>
+														<div class="message-date">01 Dec, 2016</div>
+													</div>
+													<span class="message-notification fa fa-bell-o text-info"></span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-title text-primary">Need WP Help!</div>
+														<div class="message-date">26 Nov, 2016</div>
+													</div>
+													<span class="message-notification fa fa-bell-o"></span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-title text-primary">Psd Template Help!</div>
+														<div class="message-date">26 Nov, 2016</div>
+													</div>
+													<span class="message-notification fa fa-bell-o"></span>
+												</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<button class="btn btn-light" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="fa fa-envelope-o"></span>
+												<span class="badge badge-info">5</span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-author">Kazi Fahim</div>
+														<div class="message-title text-primary">Psd Template Help!</div>
+														<div class="message-date">01 Dec, 2016</div>
+													</div>
+													<span class="message-notification fa fa-envelope-o text-info"></span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-author">Richi Lenal</div>
+														<div class="message-title text-primary">Psd Template Help!</div>
+														<div class="message-date">26 Nov, 2016</div>
+													</div>
+													<span class="message-notification fa fa-envelope-o"></span>
+												</a>
+												<a class="dropdown-item" href="#">
+													<div class="img-wrapper"><!-- <img src="" alt=""> --></div>
+													<div class="message">
+														<div class="message-author">PsdBosS</div>
+														<div class="message-title text-primary">Psd Template Help!</div>
+														<div class="message-date">26 Nov, 2016</div>
+													</div>
+													<span class="message-notification fa fa-reply"></span>
+												</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<button class="btn btn-light" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<span class="fa fa-shopping-cart"></span>
+												<span class="badge badge-primary">8</span>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item justify-content-start pt-20 pb-24" href="#">
+													<div class="shopping-cart-img-wrapper"><img class="img-fluid" src="img/template-1.jpg" alt="Ballet"></div>
+													<div class="shopping-cart-message">
+														<div class="shopping-cart-title">Grand Ballet</div>
+														<div class="shopping-cart-cat text-primary">WordPress</div>
+														<div class="shopping-cart-price">$59</div>
+													</div>
+												</a>
+												<a class="dropdown-item justify-content-start pt-20 pb-24" href="#">
+													<div class="shopping-cart-img-wrapper"><img class="img-fluid" src="img/template-8.jpg" alt="Apple"></div>
+													<div class="shopping-cart-message">
+														<div class="shopping-cart-title">Apple Device</div>
+														<div class="shopping-cart-cat text-primary">WordPress</div>
+														<div class="shopping-cart-price">$59</div>
+													</div>
+												</a>
+												<div class="dropdown-item d-flex flex-column py-13">
+													<div class="w-100 d-flex justify-content-between pb-20">
+														<span class="total-title ml-10">Total</span>
+														<span class="total-sum mr-25">$118</span>
+													</div>
+													<div class="w-100">
+														<a class="btn btn-xs btn-primary px-20">Go to Cart</a>
+														<a class="btn btn-xs btn-secondary px-14">Go to Checkout</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="info-inner user d-flex align-items-center">
+										<div class="user-logo"></div>
+										<div class="user-data">
+											<div class="dropdown">
+												<button class="btn py-0 px-0" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mike Hussy <span class="fa fa-angle-down"></span>
+												</button>
+												<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+													<a class="dropdown-item" href="#">Profile Page</a>
+													<a class="dropdown-item" href="#">Portfolio</a>
+													<a class="dropdown-item" href="#">Account Setting</a>
+													<a class="dropdown-item" href="#">Downloads</a>
+													<a class="dropdown-item" href="#">Wishlist</a>
+													<a class="dropdown-item" href="#">Upload Item</a>
+													<a class="dropdown-item" href="#">Statement</a>
+													<a class="dropdown-item" href="#">Withdraws</a>
+												</div>
+											</div>
+											<div class="value text-primary">$171.00</div>
+										</div>	
+									</div>
+									<div class="info-inner ml-25 mt-2 mt-sm-0">
+										<a class="btn btn-primary btn-account px-20" data-toggle="modal" data-target="#loginModal">Login</a>
+										<a class="btn btn-secondary btn-account">Register</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navigation navbar-dark bg-dark">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg">
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">About</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Wordpress</a>										
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Joomla</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">PSD</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Plugins</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Components</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="products-listing-1.html">Products Grid</a>
+											<a class="dropdown-item" href="products-listing-2.html">Products List</a>
+											<a class="dropdown-item" href="single-product.html">Products Card</a>
+											<div class="dropdown-divider"></div>											
+											<a class="dropdown-item" href="sales-statement.html">Sales Statement</a>
+											<a class="dropdown-item" href="about.html">About Us</a>
+											<a class="dropdown-item" href="404.html">404 Error page</a>
+										</div>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contact</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Help</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<!-- Section Banner -->
+			<section class="main-banner-wrapper bg-img-1 text-center pt-60 pb-65">
+				<div class="container">
+					<h1 class="text-white d-none">Welcome To Foxtar Market Place!</h1>
+					<h4 class="text-white mt-20">Premium WordPress Themes, Web Templates and Many More ...</h4>
+					<div class="row">
+						<div class="col-md-9 mx-auto">
+							<form class="mt-45 px-lg-30">
+								<div class="input-group stylish-input-group py-auto">
+									<input type="text" class="form-control"  placeholder="Search Your Keywords . . ." >
+									<span class="input-group-addon">
+										<button type="submit">
+											<i class="fa fa-search"></i>
+										</button>  
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>				
+		</header>
+		<main class="bg-lavender">
+			<div class="container">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Product Page GT Builder Construction</li>
+					</ol>
+				</nav>
+			</div>
+			<section class="pb-45 pb-md-90">
+				<div class="container">
+					<div class="row">						
+						<!-- Main content -->
+						<div class="col-lg-9">
+							<!-- Product details -->
+							<div class="bg-white p-20 border mb-30 minh-120 minh-md-420">
+								<img class="img-fluid " src="img/template-1.jpg" alt="template">
+							</div>	
+							<h2 class="card-title-lg mt-3">GTBuilder - Construction & Building WordPress Theme</h2>
+							<p class="mt-20">Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged.</p>
+
+							<!-- Block with groups of buttons start -->
+							<div class="d-flex flex-row justify-content-between mt-43 group-offset-left-xs">
+								<ul class="inline-list d-inline-flex flex-wrap jusrify-content-start align-content-between" role="group">
+									<li>
+										<button type="button" class="btn btn-secondary btn-reverse-color pl-32 pr-32 py-12 mx-2 mb-2 fz-16 font-weight-medium rounded-0">Live Preview</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-dark btn-reverse-color pl-32 pr-32 py-12 mx-2 mb-2 fz-16 font-weight-medium rounded-0">Screenshots</button>
+									</li>
+									<li>
+										<button type="button" class="btn btn-primary btn-reverse-color pl-22 pr-22 py-12 mx-2 mb-2 fz-16 font-weight-medium rounded-0">Documentation</button>
+									</li>
+								</ul>
+								<ul class="inline-list d-inline-flex flex-wrap justify-content-end align-content-start" role="group">
+									<li>
+										<a href="#" class="btn btn-social-lg btn-reverse-color facebook mb-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#" class="btn btn-social-lg btn-reverse-color twitter mb-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#" class="btn btn-social-lg btn-reverse-color linkedin mb-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+									</li>
+									<li>
+										<a href="#" class="btn btn-social-lg btn-reverse-color pinterest mb-2"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+									</li>
+								</ul>									
+							</div>
+							<!-- Block with groups of buttons end -->
+
+							<!-- Tab control start-->
+							<ul class="nav nav-tabs mt-55" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="features-tab" data-toggle="tab" href="#features" role="tab" aria-controls="features" aria-selected="true">Item Features</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="comments-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="comments" aria-selected="false">Comments</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="support-tab" data-toggle="tab" href="#support" role="tab" aria-controls="support" aria-selected="false">Support</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active " id="features" role="tabpanel" aria-labelledby="features-tab">
+									<div class="d-flex flex-wrap pt-32 pb-50 pl-36 pr-20">
+										<ul class="listing mr-40">
+											<li>Printing and typesetting industry</li>
+											<li>Bhen an unknown printe</li>
+											<li>Handard dummy text</li>
+											<li>Desktop publishing software</li>
+											<li>Bhen an unknown printe</li>
+										</ul>
+										<ul class="listing mt-3 mt-md-0">
+											<li>Printing and typesetting industry</li>
+											<li>Bhen an unknown printe</li>
+											<li>Handard dummy text</li>
+										</ul>
+									</div>										
+								</div>
+								<div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comments-tab">
+									<div class="pt-32 pb-50 pl-36 pr-20">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+									<div class="pt-32 pb-50 pl-36 pr-20">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+									<div class="pt-32 pb-50 pl-36 pr-20">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</div>
+							</div>
+							<!-- Tab control end-->
+
+							<div class="bg-white pb-18 pt-15 pl-28 mt-53 border">
+								<a href="#" class="link-dark fz-18 font-weight-bold">More Product by PsdBosS</a>
+							</div>
+
+							<!-- Media container -->
+							<div class="row mt-12 align-items-center">
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-3.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$12</div>
+									 	</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-3.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$59</div>
+									 	</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-3.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$48</div>
+									 	</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-3.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$18</div>
+									 	</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-3.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$29</div>
+									 	</div>
+									</div>
+								</div>
+								<div class="col-6 col-sm-4">
+									<div class="card-media d-flex flex-column flex-md-row">
+										<div class="card-media-img-wrapper">
+											<img class="img-fluid" src="img/template-5.jpg" alt="template 1">
+										</div>
+										
+										<div class="card-media-body ml-1 ml-md-20 pt-15 pb-1">
+											<h5 class="card-media-title mt-0"><a href="#" class="link-dark">Grand Ballet - Dance</a></h5>
+											<a href="#" class="card-media-body-cat mb-10">PSD Template</a>
+											<div class="card-media-body-price fz-18">$18</div>
+									 	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Sidebar -->
+						<div class="col-lg-3">
+							<!-- Product Price -->
+							<div class="sidebar-block">
+								<h4>Product Price</h4>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="product-price text-secondary fz-22 font-weight-medium">$59.00</div>
+									<button class="btn btn-price-select dropdown-toggle" type="button"><span class="fz-13">Regular</span>												
+									</button>		
+								</div>	
+								<ul class="inline-list mt-30 ">
+									<li> 
+										<a href="#" class="flex-grow-1 btn btn-primary w-100 btn-reverse-color rounded-0 py-12 font-weight-bold mb-6">
+											<i class="fa fa-shopping-cart mr-6" aria-hidden="true"></i> Add To Cart
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex-grow-1 btn btn-twitter w-100 btn-reverse-color rounded-0 rounded-0 py-12 font-weight-bold mb-6"><i class="fa fa-heart-o mr-6 d-inline-block d-lg-none d-xl-inline-block" aria-hidden="true">
+											</i> Add To Favourites
+										</a>
+									</li>
+									<li>
+										<a href="#" class="flex-grow-1 btn btn-cyan w-100 btn-reverse-color rounded-0 py-12 font-weight-bold mb-6">Buy Now</a>
+									</li>									
+                                </ul>
+							</div>	
+							<!-- Product Author block						 -->
+							<div class="sidebar-block">
+								<h4>Product Author</h4>
+								<div class="sidebar-block-author">
+									<div class="img-wrapper">
+										<img src="img/user-default.png" alt="author" class="img-responsive">
+									</div>
+									<div class="sidebar-block-author-content">
+										<h5>PsdBoss</h5>
+										<a href="#" class="btn">View Profile</a>
+									</div>
+								</div>
+								<div>
+									<ul class="inline-list d-flex justify-content-start flex-wrap">
+										<li class="mr-1 mb-3">
+											<div class="shield bg-light-orange">
+												<i class="fa fa-meh-o"></i>
+											</div>										
+										</li>
+										<li class="mr-1 mb-3">
+											<div class="shield bg-secondary">
+												<i class="fa fa-bolt"></i>
+											</div>
+										</li>
+										<li class="mr-1 mb-3">
+											<div class="shield bg-twitter">
+												<i class="fa fa-pagelines"></i>
+											</div>
+										</li>
+										<li class="mr-1 mb-3">
+											<div class="shield bg-light-green">
+												<i class="fa fa-foursquare"></i>
+											</div>
+										</li>
+										<li>
+											<div class="shield bg-cyan-200">
+												<i class="fa fa-cny"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- Sales block -->
+							<div class="sidebar-block font-weight-light py-24 ">
+								<i class="fa fa-shopping-cart mr-23 text-light-cyan fz-20" aria-hidden="true"></i>
+								<span class="fz-20 text-dark font-weight-bold mr-14">05</span>Sales
+							</div>
+							<!-- Product Information block -->
+							<div class="sidebar-block">
+								<h4>Product Information</h4>
+								<ul class="inline-list product-info">
+									<li><span class="product-info-title">Released On:</span> 1 January, 2016</li>
+									<li><span class="product-info-title">Download:</span> 613</li>
+									<li><span class="product-info-title">Version:</span> 1.1</li>
+									<li><span class="product-info-title">Compatibility:</span> Wordpress 4+</li>
+									<li><div class="product-info-title mb-10">Compatible Browsers:</div>IE9, IE10, IE11, Firefox, Safari, Opera, Chrome</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<section class="bg-dark pt-45 pt-md-110">
+				<div class="container pb-15 pb-md-90">
+					<div class="row">
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-block mb-45 mb-lg-0">
+								<h4 class="footer-block-title">About Company</h4>
+								<p class="company-desc">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse. Fusce sit amet urna iat. Praesent vel rutrum purus.</p>
+								<ul class="company-address">
+									<li class="d-flex">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<p class="company-address-inf">PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+									</li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<a href="callto:+61383766284">+61 3 8376 6284</a>
+									</li>
+	                            </ul>
+                        	</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-block mb-45 mb-lg-0">
+								<h4 class="footer-block-title">Join Our Community</h4>								
+								<ul class="listing">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Forums</a></li>
+									<li><a href="#">Become an Author</a></li>
+									<li><a href="#">Community Meetups</a></li>
+									<li><a href="#">Become an Affiliate</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-block mb-45 mb-lg-0">
+								<h4 class="footer-block-title">Need Help?</h4>
+								<ul class="listing">
+									<li class="listing-item"><a href="#">Help Center</a></li>
+									<li class="listing-item"><a href="#">Foxtar Market Terms</a></li>
+									<li class="listing-item"><a href="#">Author Terms</a></li>
+									<li class="listing-item"><a href="#">Foxtar Licenses</a></li>
+									<li class="listing-item"><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3">
+							<div class="footer-block mb-45 mb-lg-0">
+								<h4 class="footer-block-title">Follow Us On</h4>
+								<!-- Social icons panel -->
+								<ul class="footer-social pt-10 pb-20">
+									<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								</ul>
+								<!-- Form subscribe newsletter -->
+								<form>
+									<h4 class="text-white font-weight-regular">Newsletter Sign Up!</h4>
+									<div class="d-flex flex-nowrap pt-10">
+										<input type="email" class="input-email w-100" placeholder="E-mail address">
+										<button type="submit" class="input-sign"><i class="fa fa-paper-plane"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright text-center">
+					<p>© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+				</div>
+			</section>
+		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade form-login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg-primary">
+				<div class="modal-header flex-column align-items-center pb-20">					
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  		<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+					<div class="text-white text-uppercase h1 mt-50">Login</div>
+				</div>
+			  	<div class="modal-body pt-10 mx-sm-60 mx-lg-145 mx-0 pb-60 pb-lg-110">
+				  	<form>
+				  		<div class="form-control-wrapper mb-10">
+				  			<i class="fa fa-user"></i>
+				  			<input class="form-control" placeholder="Name" type="text">
+				  		</div>	
+				  		<div class="form-control-wrapper mb-20">
+				  			<i class="fa fa-lock"></i>
+				  			<input class="form-control" placeholder="Password" type="password">
+				  		</div>					
+						
+						<div class="d-flex justify-content-center flex-wrap">
+							<button class="btn btn-login py-13 px-97 mr-0 mr-sm-10 px-sm-45 mb-18" type="submit" value="Login">Submit</button>
+							<a class="btn btn-register py-10 px-36 mb-18" href="#"><i class="fa fa-edit mr-10"></i>Creat An Account?</a>
+							<div class="remember-lost align-self-center align-self-md-start">
+						</div>	
+						</div>
+						<div class="remember-lost d-flex justify-content-center justify-content-lg-start">
+							<a class="lost-password" href="#">Lost Password?</a>
+						</div>					
+					</form>				
+			  	</div>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- jquery -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- bootstrap  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

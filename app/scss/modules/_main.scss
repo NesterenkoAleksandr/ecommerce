@@ -1,18 +1,4 @@
-// *{outline: 1px dotted red;}
-.bg-lavender{
-	background-color: $lavender-blush;
-}
-
-.bg-dark{
-	background-color: $dark;
-}
-
-.bg-img-1{
-	background-image: url(../img/header-banner.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+ /**{outline: 1px dotted red;}*/
 
 /*Styles for header banner*/
 .main-banner-wrapper{
@@ -91,4 +77,63 @@
 		color: $heather;
 	}	
 }
+
+/*Banner*/
+.banner-wrapper{
+	position: relative;
+	height: 440px;
+	overflow: hidden;
+
+	box-shadow: 0 0 30px 13px rgba(216, 216, 216, 0.75);
+
+	img{
+		width: 100%;
+	}
+
+	.banner-inner-wrapper{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		padding: 35px 30px;
+		opacity: 0.95;
+
+		@media (min-width: 576px){
+			width: 57%;
+			height: auto;
+			padding: 45px 35px;
+		}
+		@media (min-width: 992px){			
+			padding: 70px 35px;
+		}
+
+		.banner-title{
+			font-size: 30px;
+			line-height: 36px;
+			color: $white;
+		}
+
+		a{
+			font-size: 18px;
+			padding: 18px 20px;
+			border-radius: 0;
+
+			@media (min-width: 576px){
+				padding: 18px 30px;
+			}
+
+			@media (min-width: 576px){
+				padding: 18px 40px;
+			}
+		}
+	}
+}
+
+#map {
+	height: 410px;  /* The height is 400 pixels */
+	width: 100%;  /* The width is the width of the web page */
+}
+
 

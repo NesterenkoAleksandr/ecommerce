@@ -12,10 +12,6 @@
 	color: $san-juan;
 }
 
-// .fz-30{
-// 	font-size: 30px;
-// }
-
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

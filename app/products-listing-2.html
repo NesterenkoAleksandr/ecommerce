@@ -172,17 +172,10 @@
 										<a class="nav-link" href="index.html">Home</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">About</a>
+										<a class="nav-link" href="about.html">About</a>
 									</li>
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Wordpress
-										</a>
-										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-											<a class="dropdown-item" href="products-listing-1.html">Products Grid</a>
-											<a class="dropdown-item" href="products-listing-2.html">Products List</a>
-											<div class="dropdown-divider"></div>
-											<a class="dropdown-item" href="#">Medical</a>
-										</div>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Wordpress</a>										
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#">Joomla</a>
@@ -196,11 +189,20 @@
 									<li class="nav-item">
 										<a class="nav-link" href="#">Components</a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Pages</a>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<a class="dropdown-item" href="products-listing-1.html">Products Grid</a>
+											<a class="dropdown-item" href="products-listing-2.html">Products List</a>
+											<a class="dropdown-item" href="single-product.html">Products Card</a>
+											<div class="dropdown-divider"></div>											
+											<a class="dropdown-item" href="sales-statement.html">Sales Statement</a>
+											<a class="dropdown-item" href="about.html">About Us</a>
+											<a class="dropdown-item" href="404.html">404 Error page</a>
+										</div>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#">Contact</a>
+										<a class="nav-link" href="contact.html">Contact</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#">Help</a>
@@ -258,17 +260,16 @@
 								</ul>
 							</div>
 							<div class="sidebar-block">
-								<h4>Price range</h4>
+								<h4 class="mb-38">Price Range</h4>
 								<div class="range">
 									<div class="controls">
-										<div id="price-range"></div>
-										<div class="textinputs">
-											<input id="price-min" type="text" value="0"/>
-											<input id="price-max" type="text" value="1000"/>
+										<div id="slider-range">
+											<div id="custom-handle" class="ui-slider-handle"></div>
+											<div id="custom-handle_2" class="ui-slider-handle"></div>
 										</div>
 									</div>
 								</div>
-								<a href="#" class="btn btn-primary btn-lg w-100"><i class="fa fa-search mr-10"></i>Search</a>
+								<a href="#" class="btn btn-primary mt-58 btn-lg w-100"><i class="fa fa-search mr-10"></i>Search</a>
 							</div>
 							<div class="sidebar-block">
 								<h4>Top 10 sellers</h4>
@@ -920,6 +921,7 @@
 
 	<!-- range -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/price-range.js"></script>
 	<!-- bootstrap  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
