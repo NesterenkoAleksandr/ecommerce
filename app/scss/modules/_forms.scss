@@ -47,7 +47,7 @@
 
 	.field-desc{
 		font-size: 15px;
-		color: #444444;
+		color: $charcoal;
 	}
 
 	.field-item{
@@ -59,7 +59,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 1rem;
-	width: 100%;
 
 	input,
 	textarea{

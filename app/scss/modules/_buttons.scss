@@ -20,6 +20,22 @@
 	}
 }
 
+.btn-social-md{
+	font-size: 1.125rem;
+	width: 28px;
+	height: 28px;
+	text-align: xenter;
+	line-height: 28px;
+	padding: 0;
+	border-radius: 0;
+	margin-left: 3px;
+	.icon{
+		font-size: 1.125rem;
+		line-height: 28px;
+	}
+}
+
+
 .btn-primary-white{
 	color: $white;
 	background-color: $primary;
@@ -82,6 +98,10 @@
 
 	&[class*="pinterest"]{
 		@include social-btn-colors($white, $pinterest);
+	}
+
+	&[class*="youtube"]{
+		@include social-btn-colors($white, $cinnabar);
 	}
 
 	&[class*="cyan"]{

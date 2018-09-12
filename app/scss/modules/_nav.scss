@@ -22,18 +22,12 @@
 				color: $dark;
 				border-bottom-color: $primary;
 				font-weight: 700;
+
+				i{
+					color: $primary;
+				}				
 			}
 		}
-
-		/*.nav-link + .nav-link{
-			border-left: none;
-		}*/
-
-		/*&:first-of-type{
-			.nav-link{
-				border-left: 1px solid $light-gray;
-			}
-		}*/
 	}
 }
 

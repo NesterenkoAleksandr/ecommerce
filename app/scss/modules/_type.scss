@@ -80,6 +80,44 @@ p:last-of-type{
 	}
 }
 
+.profile-list{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $white;
+	border-left: 1px solid $light-gray;
+	font-size: 14px;
+
+	li{
+		flex-grow: 1;
+		text-align: center;
+		border: 1px solid $light-gray;
+		border-left: none;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+	&-title{		
+		color: $dark;
+		font-weight: 500;
+		margin-bottom: 4px;
+
+		&-desc{
+			color: black;
+		}
+	}
+}
+
+.profile-img-wrapper{
+	overflow: hidden;
+	max-height: 330px;
+	background-color: $white;
+}
+
 span{
 	&.ico-sort{
 		&:before{
@@ -99,4 +137,8 @@ span{
 
 .border-bottom-none{
 	border-bottom: 0;
+}
+
+.overflow-hidden{
+	overflow: hidden;
 }

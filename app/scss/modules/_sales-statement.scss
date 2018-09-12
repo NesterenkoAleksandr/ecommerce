@@ -27,67 +27,76 @@
 	}
 
 	.sales-statement-body{
-			.td-id{				
+
+		.img-avatar{
+			width: 30px;
+			height: 30px;
+			background-color: #cccccc;
+			overflow: hidden;
+			border-radius: 50%;
+		}
+
+		.td-id{				
+			font-weight: bold;
+		}
+
+		table th{
+			font-size: 14px;
+			font-weight: 400;
+			padding-top: 18px;
+			padding-bottom: 18px;
+		}
+
+		table td{
+			font-size: 14px;
+			color: $gray-20;
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}	
+
+		@media screen and (max-width: 576px) {
+			table {
+				border: 0;
+			}
+
+			table caption {
+				font-size: 1.3em;
+			}
+
+			table thead {
+				border: none;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+			}
+
+			table tr {
+				border-bottom: 3px solid #ddd;
+				display: block;
+			}
+
+			table td {
+				border-bottom: 1px solid #ddd;
+				display: block;
+				font-size: .8em;
+				text-align: right;
+			}
+
+			table td::before {
+				content: attr(data-label);
+				float: left;
 				font-weight: bold;
+				text-transform: uppercase;
 			}
 
-			table th{
-				font-size: 14px;
-				font-weight: 400;
-				padding-top: 18px;
-				padding-bottom: 18px;
+			table td:last-child {
+				border-bottom: 0;
 			}
-
-			table td{
-				font-size: 14px;
-				color: $gray-20;
-				padding-top: 22px;
-				padding-bottom: 22px;
-			}	
-
-			@media screen and (max-width: 576px) {
-				table {
-					border: 0;
-				}
-
-				table caption {
-					font-size: 1.3em;
-				}
-
-				table thead {
-					border: none;
-					clip: rect(0 0 0 0);
-					height: 1px;
-					margin: -1px;
-					overflow: hidden;
-					padding: 0;
-					position: absolute;
-					width: 1px;
-				}
-
-				table tr {
-					border-bottom: 3px solid #ddd;
-					display: block;
-				}
-
-				table td {
-					border-bottom: 1px solid #ddd;
-					display: block;
-					font-size: .8em;
-					text-align: right;
-				}
-
-				table td::before {
-					content: attr(data-label);
-					float: left;
-					font-weight: bold;
-					text-transform: uppercase;
-				}
-
-				table td:last-child {
-					border-bottom: 0;
-				}
-			}
+		}
 	}
 
 	.sales-statement-footer{
