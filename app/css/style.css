@@ -22278,4 +22278,50 @@ footer form .input-sign {
     font-weight: bold;
     color: #8bc34a; }
 
+.withdraw-lbl {
+  display: block;
+  font-weight: 500;
+  color: #263238;
+  margin-top: 30px;
+  margin-bottom: 25px; }
+  .withdraw-lbl .required {
+    color: #8bc34a;
+    font-size: 24px;
+    margin-left: 10px; }
+
+.withdraw-input {
+  font-size: 15px;
+  background-color: #f9f9f9;
+  padding: 10px 20px; }
+
+.withdraw-table {
+  font-size: 13px;
+  color: #444444;
+  line-height: 30px; }
+  .withdraw-table .date {
+    white-space: nowrap;
+    font-weight: 500; }
+  .withdraw-table .e-mail {
+    font-weight: 400; }
+  .withdraw-table .amount, .withdraw-table .status {
+    font-weight: 700; }
+  .withdraw-table .paid {
+    color: #8bc34a; }
+  @media screen and (max-width: 576px) {
+    .withdraw-table {
+      border: 0; }
+      .withdraw-table tr {
+        border-bottom: 3px solid #ddd;
+        display: block; }
+      .withdraw-table td {
+        display: block;
+        text-align: right; }
+      .withdraw-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .withdraw-table td:last-child {
+        border-bottom: 0; } }
+
 /*# sourceMappingURL=style.css.map */

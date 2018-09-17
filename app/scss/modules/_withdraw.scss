@@ -1,0 +1,67 @@
+.withdraw-lbl{
+	display: block;
+	font-weight: $font-weight-medium;
+	color: $dark;
+	margin-top: 30px;
+	margin-bottom: 25px;
+
+	.required{
+		color: $primary;
+		font-size: 24px;
+		margin-left: 10px;
+	}
+}
+
+.withdraw-input{
+	font-size: 15px;
+	background-color: $approx-snow;
+	padding: 10px 20px;	
+}
+
+.withdraw-table{
+	font-size: 13px;
+	color: $charcoal;
+	line-height: 30px;
+
+	.date{
+		white-space: nowrap;
+		font-weight: $font-weight-medium;
+	}
+
+	.e-mail{
+		font-weight: $font-weight-normal;
+	}
+
+	.amount, .status{
+		font-weight: $font-weight-bold;
+	}
+
+	.paid{
+		color: $primary;
+	}
+
+	@media screen and (max-width: 576px) {
+			border: 0;
+
+			 tr {
+				border-bottom: 3px solid #ddd;
+				display: block;
+			}
+
+			 td {
+				display: block;
+				text-align: right;
+			}
+
+			 td::before {
+				content: attr(data-label);
+				float: left;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			td:last-child {
+				border-bottom: 0;
+			}
+		}
+}

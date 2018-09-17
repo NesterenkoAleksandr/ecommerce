@@ -5,11 +5,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dosis%7COpen+Sans:300,400,600" rel="stylesheet">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="format-detection" content="telephone=no">
 	<meta name= viewport content="width=device-width height=device-height user-scalable=yes">
-	<title>Contact</title>
+	<title>Withdrawals</title>
 </head>
 <body>
 	<div class="page">
@@ -243,68 +242,104 @@
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+						<li class="breadcrumb-item active" aria-current="page">Withdrawals</li>
 					</ol>
 				</nav>
 			</div>
-			<section class="bg-lavender pb-140">
+			<section class="pb-145">
 				<div class="container">
-					<div class="border-gray bg-white">
-						<div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
-							<h3 class="pl-30 pt-19 pb-19">Contact With Us</h3>
-						</div>
-						<div class="pt-30 pb-14  px-15 px-md-40 border-top-gray">
-							<div class="map-section">
-								<!--The div element for the map -->
-								<div id="map"></div>
-							</div>
-							<div class="row pt-60 d-flex flex-column flex-md-row">
-								<div class="col-md-4">
-									<div class="card-contact">
-										<div class="card-contact-title">
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											<h4>Our Office Address</h4>
-										</div>										
-										<p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
-									</div>
-									<div class="card-contact">
-										<div class="card-contact-title">
-											<i class="fa fa-phone" aria-hidden="true"></i>
-											<h4>Phone</h4>
-										</div>
-										<a class="link-dark" href="callto:+61383766284">+61 3 8376 6284</a>
-									</div>
-									<div class="card-contact">
-										<div class="card-contact-title">
-											<i class="fa fa-envelope mr-3" aria-hidden="true"></i>
-											<h4>E-mail</h4>
-										</div>
-										<a class="link-dark" href="mailto:info@foxtar.com">info@foxtar.com</a>
-									</div>									
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="border-gray bg-white pb-50">
+								<div>
+									<h3 class="pl-15 pl-sm-30 pt-3 pb-3">Withdrawals Earnings</h3>
 								</div>
-								<div class="col-md-8 pr-0">
-									<h3 class="mt-30 mt-md-0">Drop Us A Message</h3>
-									<form class="form-contact">
-										<div class="row w-100">
-											<div class="col-md-6 pr-0">
-												<input type="text" placeholder="Name*" class="form-control w-100 mb-3 mb-md-0">
-											</div>
-											<div class="col-md-6 pr-0">
-												<input type="email" placeholder="E-mail*" class="form-control w-100">
-											</div>
-											<div class="col pr-0">
-												<textarea placeholder="Message*" rows="8" class="form-control w-100 mt-35"></textarea>
-											</div>
-										</div>
-										<button class="btn btn-primary mt-20">Send Message</button>
-									</form>
+								<!-- Form Withdrawals Earnings -->
+								<form class="px-15 px-sm-40 border-top-gray">
+									<div class="form-group">
+										<label class="withdraw-lbl" for="withdraw-amount">Amount to Withdraw ($2000.00 Maximum)<span class="required">*</span></label>
+										<input type="text" class="form-control withdraw-input" id="withdraw-amount" placeholder="Enter the amount you want to withdraw...">
+									</div>
+									<div class="form-group">
+										<label class="withdraw-lbl" for="withdraw-method">Choose your Withdraw Method<span class="required">*</span></label>
+										<select class="form-control withdraw-input" id="withdraw-method">
+											<option>Select Your Card</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="withdraw-lbl" for="withdraw-account-method">Your Account Name<span class="required">*</span></label>
+										<select class="form-control withdraw-input" id="withdraw-account-method">
+											<option>Select Your Card</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="withdraw-lbl" for="withdraw-password">Confirm Your Password<span class="required">*</span></label>
+										<input type="password" class="form-control withdraw-input" id="withdraw-password" placeholder="Select Your Card">
+									</div>
+
+									<button class="btn btn-primary font-weight-bold py-20 px-30 mt-40 btn-reverse-color">Request Withdrawal</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="border-gray bg-white pb-50 mt-40 mt-lg-0">
+								<div>
+									<h3 class="pl-30 pt-3 pb-3">Withdrawal History</h3>
+								</div>
+								<div class="border-top-gray px-15 px-sm-40">
+									<!-- Table Withdrawal History -->
+									<table class="table withdraw-table">
+										<tbody>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$200</td>
+												<td class="status" data-label="Status">Pending</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$100</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$200</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$100</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$200</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$100</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+											<tr>
+												<td class="date" data-label="Date">Dec 26th, 2016</td>
+												<td class="e-mail" data-label="E-mail">Psdboss@paypal.com</td>
+												<td class="amount" data-label="Amount">$200</td>
+												<td class="status paid" data-label="Status">Paid</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-
 		</main>
 		<!-- Footer -->
 		<footer>
@@ -423,16 +458,5 @@
 	<!-- bootstrap  -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
-
-	<!--Load the API from the specified URL
-	* The async attribute allows the browser to render the page while the API loads
-	* The key parameter will contain your own API key (which is not needed for this tutorial)
-	* The callback parameter executes the initMap() function
-	-->
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd-I15C-pmigPsAJIgEuS0oLVBrgy-Vd4&callback=initMap">
-	</script>
-	<!-- site google map scripts -->
-	<script src="js/google-map.js"></script>
 </body>
 </html>
