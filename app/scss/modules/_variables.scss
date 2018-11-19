@@ -1,25 +1,177 @@
 // Color system
 $primary: #8bc34a;
 $secondary: #e74c3c;
+$gray-100: #cccccc;
+$gray-200: #e8e8e8;
+$gray-300: #f5f5f5;
+$gray-500: #e0e0e0;
+$gray-600: #70838d;
+$gray-700: #aeb4bb;
 $gray-800: #b5b5b5;
 $gray-900: #707070;
+$gray-20: #333333;
+$gray-48: #7a7a7a;
 $green: #8bc34a;
 $red: #e74c3c;
 $orange: #ffa726;
 $cyan: #546e7a;
-
+$cyan-100: #b7c3c8;
+$cyan-200: #ced7db;
+$pattens-blue: #dde3e8;
 $dark: #263238;
+$sushi: #7caf40;
+$charcoal: #444444;
+$gainsboro: #dcdcdc;
+
+
+$white:   #fff !default;
+$gray-83: #d4d4d4 !default;
+$botticelli: #90a4ae !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$mango-tango: #ef6c00 !default;
+$dark-tangerine: #fcb322 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$light-cyan: #a6b5bb;
+$lavender-blush: #f4f6f5 !default;
+$heather: #b0bec5 !default;
+$nero: #222222;
+$alice-blue: #f2f5f8;
+$san-juan: #455a64;
+$dark-green: #76ae36;
+$atomic: #424d53;
+$info: $mango-tango;
+$warning: $dark-tangerine;
+$light: $gray-300;
+$light-gray: #d7d7d7;
+$blue-bayoux: #697378;
+$big-stone: #2f3c43;
+$mariner: #3b5998;
+$blue-jeans: #55acee;
+$cinnabar: #e52d27;
+$venetian-red: #bd081c;
+$denim: #1565c0;
+$bali-hai: #919699;
+$arapawa: #7a8b95;
+$light-orange: #ffb64c;
+$light-green: #65ba69;
+$bermuda-grey: #78909c;
+$white-smoke: #f8f8f8;
+$alice-blue: #f1f4f5;
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+	"blue":       $blue,
+	"indigo":     $indigo,
+	"purple":     $purple,
+	"pink":       $pink,
+	"red":        $red,
+	"orange":     $orange,
+	"mango-tango": $mango-tango,
+	"yellow":     $yellow,
+	"green":      $green,
+	"teal":       $teal,
+	"cyan":       $cyan,
+	"white":      $white,
+	"lavender-blush": $lavender-blush,
+	"heather":    $heather,
+	"gray":       $gray-600,
+	"gray-83":    $gray-83,
+	"gray-dark":  $gray-800,
+	"san-juan": $san-juan,
+	"light-cyan": $light-cyan,
+	"gray-600": $gray-600
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+$facebook:      $mariner;
+$twitter:       $blue-jeans;
+$pinterest:     $venetian-red;
+$linkedin:      $denim;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "lavender":   $lavender-blush,
+    "facebook":   $mariner,
+    "twitter":    $blue-jeans,
+    "pinterest":  $venetian-red,
+    "linkedin":   $denim,
+    "cyan":       $cyan,
+    "light-cyan": $light-cyan,
+    "light-orange": $light-orange,
+    "light-green": $light-green,
+    "cyan-200": $cyan-200,
+    "gray-600": $gray-600,
+    "gray-83": $gray-83,
+    "white-smoke": $white-smoke,
+    "san-juan": $san-juan,
+    "charcoal": $charcoal
+  ),
+  $theme-colors
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    60: 60%,
+    75: 75%,
+    100: 100%,
+    80: 80px,
+    110: 110px,
+    120: 120px,
+    135: 135px,
+    420: 420px,
+    auto: auto
+  ),
+  $sizes
+);
+
+// Body
+// $body-bg: $lavender-blush;
 
 // Fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
-$h1-font-size: 36px;
-$h2-font-size: 30px;
+$h1-font-size: 48px;
+$h2-font-size: 36px;
 $h3-font-size: 24px;
 $h4-font-size: 20px;
 $h5-font-size: 18px;
 
 $small-font-size: 87.5%;
 $font-size-sm: 0.75rem;
+
+$font-weight-medium: 500 !default;
 
 $heading-4-font-weight: bold;
 
@@ -38,16 +190,72 @@ $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
   (
-    0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3),
-    120: 120px
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.5),
+	5: ($spacer * 3),
+	6: 6px,
+	10: 10px,
+	11: 11px,
+	12: 12px,
+	13: 13px,
+	14: 14px,
+	15: 15px,
+	18: 18px,
+	19: 19px,
+	20: 20px,
+	22: 22px,
+	23: 23px,
+	24: 24px,
+	25: 25px,
+	27: 27px,
+	28: 28px,
+	30: 30px,
+	32: 32px,
+	35: 35px,
+	36: 36px,
+	38: 38px,
+	40: 40px,
+	43: 43px,
+	44: 44px,
+	45: 45px,
+	48: 48px,
+	50: 50px,
+	52: 52px,
+	53: 53px,
+	55: 55px,
+	58: 58px,
+	60: 60px,
+	65: 65px,
+	69: 69px,
+	70: 70px,
+	75: 75px,
+	83: 83px,
+	85: 85px,
+	90: 90px,
+	97: 97px,
+	100: 100px,
+	105: 105px,
+	110: 110px,
+	115: 115px,
+	120: 120px,
+	125: 125px,
+	130: 130px,
+	135: 135px,
+	140: 140px,
+	145: 145px,
+	150: 150px,
+	170: 170px,
+	226: 226px,
+	300: 300px
   ),
   $spacers
 );
+
+// Borders
+$border-color: $pattens-blue;
 
 // Cards
 $card-spacer-y: 0.35rem;
@@ -57,3 +265,22 @@ $card-spacer-x-sm: 0.6rem;
 // Links
 $link-hover-color: $cyan;
 $link-hover-decoration: none;
+
+// Components
+$box-shadow-sm: 0 0.0625rem 0.125rem 0 rgba(205, 214, 222, 0.75);
+$box-shadow: 0 0.0625rem 0.1875rem 0 rgba(204, 216, 228, 0.75);
+$box-shadow-lg: 0 1rem 1.25rem 0 rgba(216, 216, 216, 0.75);
+
+// Buttons
+$btn-border-radius-lg: 0;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  xl: 1200px
+) !default;
+
+/*Tables*/
+$table-dark-bg: $san-juan;

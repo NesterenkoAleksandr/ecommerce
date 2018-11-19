@@ -1,0 +1,183 @@
+footer{
+	.copyright{
+		font-size: 15px;
+		color: $bali-hai;
+		border-top: 1px solid $atomic;
+		padding-top: 24px;
+		padding-bottom: 34px;
+	}
+
+	.footer-block{
+
+		.footer-block-title{
+			font-size: 22px;
+			position: relative;
+			color: $white;
+			margin-bottom: 52px;
+
+			&:before {
+				position: absolute;
+				left: 0;
+				bottom: -27px;
+				content: "";
+				height: 3px;
+				width: 45px;
+				background: $primary;
+			}
+		}
+
+		.company-desc{
+			font-size: 15px;
+			line-height: 24px;
+			color: $cyan-100;
+			margin-bottom: 26px;
+		}
+
+		.company-address{
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+			color: $white;
+
+			li{
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 500;
+			}
+
+			li + li {
+				margin-top: 1rem;
+
+				i{
+					margin-right: 12px;
+				}
+			}
+
+			i{
+				color: $primary;
+				margin-right: 20px;
+			}
+
+			a{
+				color: $white;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+
+			.company-address-inf{
+				color: $white;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+
+		.listing{
+
+			li:before{
+				padding-right: 15px;
+			}
+
+			li + li {
+				margin-top: 1rem;
+			}
+			
+			li a{
+				color: $cyan-100;
+
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+	}
+
+	.footer-social{
+		display: flex;
+		list-style: none;
+		padding-left: 0;
+
+		li{
+
+			margin-left: 4px;
+			margin-right: 4px;			
+
+			a{
+				color:  $white;
+				font-size: 18px;
+				width: 30px;
+				height: 30px;
+				display: block;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 4px;
+
+				&:hover{
+					opacity: 0.8;
+				}
+			}			
+		}
+
+		.facebook{
+			background-color: $mariner;
+		}
+
+		.twitter{
+			background-color: $blue-jeans;
+		}
+
+		.youtube{
+			background-color: $cinnabar;
+		}
+
+		.pinterest{
+			background-color: $white;
+			color: $venetian-red;
+		}
+
+		.linkedin{
+			background-color: $denim;
+		}
+	}
+
+	form{
+		legend{
+			font-size: 20px;
+			margin-top: 40px;
+			margin-bottom: 15px;
+		}
+
+		.input-email{
+			font-size: 14px;
+			line-height: 36px;
+			padding-left: 1rem;
+			color: $white;
+			background-color: $big-stone;
+			border: none;
+			box-shadow: none;
+
+			input::placeholder{
+				color: $blue-bayoux;
+			}
+		}
+
+		.input-sign{
+			font-size: 20px;
+			color: $white;
+			background-color: $primary;
+			border: 1px solid $primary;
+			padding: 3px 10px;
+			cursor: pointer;
+			transition: $transition-base;
+
+			&:hover{
+				color: $primary;
+				background-color: $white;
+			}
+		}
+	}
+}
+
+
+

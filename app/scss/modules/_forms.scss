@@ -1,0 +1,88 @@
+.range {
+	background-color: $white;
+	.ui-slider-handle {
+		width: 1rem;
+		height: 1rem;
+		top: -0.3125rem;
+		border: 0.3125rem solid $primary;
+		border-radius: 50%;
+
+		&:focus, &:active {
+			outline: none;
+			background: $white;
+		}		
+	}
+
+	.ui-slider-horizontal {
+		height: 0.3125rem;
+		
+	}
+
+	.controls {
+
+		#price-range {
+			border: none;
+			background: $alice-blue;
+			border-radius: 0;			
+		}
+
+		.ui-slider-range {
+			background: $dark;
+		}
+
+		span{
+			font-size: 15px;
+			color: $bermuda-grey;
+			display: inline-block;
+			margin-top: 12px;
+		}
+	}
+}
+
+.form-upload-item{
+	padding-top: 40px;
+	padding-bottom: 65px;
+	padding-left: 45px;
+	padding-right: 30px;
+
+	.field-desc{
+		font-size: 15px;
+		color: #444444;
+	}
+
+	.field-item{
+		width: 100%;
+	}
+}
+
+.form-contact{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 1rem;
+	width: 100%;
+
+	input,
+	textarea{
+		box-shadow: none;
+		border: none;
+		border-radius: 0;
+		background-color: $alice-blue;
+		color: $gray-48;
+		font-size: 15px;
+		&:focus{
+			background-color: $alice-blue;
+		}
+	}
+
+	textarea{
+		resize:none;
+	}
+
+	button{
+		text-transform: uppercase;
+		border-radius: 0;
+		font-weight: bold;
+		line-height: 24px;
+		padding: 14px 35px;
+	}
+}

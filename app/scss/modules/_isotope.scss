@@ -1,0 +1,51 @@
+/*Styles for isotope filter*/
+.filter-button-group{
+	padding: 35px 0;
+
+	.button{
+		font-weight: 500;
+		background-color: $white;
+		border: 0;
+		cursor: pointer;
+		margin: 6px 2px;
+		padding: 8px 20px;
+		border: $border-width solid transparent;
+
+		&:hover{
+			border: $border-width solid $primary;
+			box-shadow: $box-shadow;
+		}
+
+		&.is-checked{
+			background-color: $secondary;
+			color: $white;
+		}		
+	}	
+}
+
+/*Styles for section with isotope filter*/
+.links-area{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding:0;
+
+	li{
+		padding: 0 6px;
+	}
+
+	.link-btn {
+		display: inline-block;
+		background: $white;
+		padding: 12px 30px;
+		text-align: center;
+		border: $border-width solid transparent;
+		border-radius: $border-radius;
+		color: $dark;
+
+		&:hover{
+			border: $border-width solid $primary;
+			box-shadow: $box-shadow;
+		}
+	}
+}

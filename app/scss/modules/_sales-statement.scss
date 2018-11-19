@@ -1,0 +1,108 @@
+.sales-statement{
+
+	.sales-statement-filter{
+		font-size: 12px;
+		color: $charcoal;
+		
+		&-item{			
+			border: 1px solid $gainsboro;
+			padding: 0 16px 0 0;			
+
+			input{
+				border: none;
+				font-size: 12px;
+				color: $charcoal;
+				padding: 2px 0;
+				line-height: 24px;
+				box-shadow: none;
+				padding-left: 1rem;
+				cursor: pointer;
+			}		
+		}
+
+		a{
+			padding: 8px 20px;
+			color: $white;
+		}
+	}
+
+	.sales-statement-body{
+			.td-id{				
+				font-weight: bold;
+			}
+
+			table th{
+				font-size: 14px;
+				font-weight: 400;
+				padding-top: 18px;
+				padding-bottom: 18px;
+			}
+
+			table td{
+				font-size: 14px;
+				color: $gray-20;
+				padding-top: 22px;
+				padding-bottom: 22px;
+			}	
+
+			@media screen and (max-width: 576px) {
+				table {
+					border: 0;
+				}
+
+				table caption {
+					font-size: 1.3em;
+				}
+
+				table thead {
+					border: none;
+					clip: rect(0 0 0 0);
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					padding: 0;
+					position: absolute;
+					width: 1px;
+				}
+
+				table tr {
+					border-bottom: 3px solid #ddd;
+					display: block;
+				}
+
+				table td {
+					border-bottom: 1px solid #ddd;
+					display: block;
+					font-size: .8em;
+					text-align: right;
+				}
+
+				table td::before {
+					content: attr(data-label);
+					float: left;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				table td:last-child {
+					border-bottom: 0;
+				}
+			}
+	}
+
+	.sales-statement-footer{
+		display: flex;
+		flex-direction: flex-column;
+		justify-content: center;
+		font-size: 30px;
+
+		.sales-total-lbl{
+			color: $dark;
+		}
+
+		.sales-total-value{						
+			font-weight: bold;
+			color: $primary;
+		}
+	}
+}

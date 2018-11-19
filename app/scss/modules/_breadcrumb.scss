@@ -1,0 +1,24 @@
+.breadcrumb {
+	padding-left: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	margin-bottom: 0;
+	background-color: transparent;
+	
+	a{
+		color: $heather;
+
+		&:hover{
+			color: $primary;
+		}
+	}
+
+	&-item.active {
+		color: $dark;
+	}
+
+	&-item + &-item::before {
+		color: $heather;
+		content: "-";
+	}
+}
